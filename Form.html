@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mars Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome to Mars Tourism</h2>
+        <form action="process_login.php" method="post" id="loginForm" onsubmit="return validateForm()">
+            <!-- Input for User ID -->
+            <label for="userid">User ID:</label>
+            <input type="text" id="userid" name="userid" placeholder="Enter your User ID" required>
+
+            <!-- Input for Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Mars Tourism. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html>
